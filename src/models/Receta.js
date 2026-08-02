@@ -19,7 +19,7 @@ import { DataTypes } from "sequelize"
 import { sequelize } from "../config/database.js"
 
 const Receta = sequelize.define("Receta", {
-    id: {
+    idReceta: {
         type: DataTypes.INTEGER,
         primaryKey: true,
         autoIncrement: true

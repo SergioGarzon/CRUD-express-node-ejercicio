@@ -14,7 +14,7 @@ import { DataTypes } from "sequelize"
 import { sequelize } from "../config/database.js"
 
 const Ingrediente = sequelize.define("Ingrediente", {
-    id: {
+    idIngrediente: {
         type: DataTypes.INTEGER,
         primaryKey: true,
         autoIncrement: true

@@ -17,8 +17,7 @@ Plataforma de Recetas de Cocina "Sabor Compartido" Se desea crear un sitio web d
 * Nombre de usuario (único) 
 * email
 * contraseña. 
-
-Lo usuarios pueden subir sus propias Recetas. 
+* Lo usuarios pueden subir sus propias Recetas. 
 
 ### Receta:  
 > Cada receta tiene:
@@ -43,6 +42,7 @@ Lo usuarios pueden subir sus propias Recetas.
 * La receta conoce a el nivel de dificultad
 
 ### Receta - Categorias:
+* id
 * id de la receta
 * id de la categoria
 
@@ -64,14 +64,16 @@ Lo usuarios pueden subir sus propias Recetas.
 * id
 * descripcion 
 
-### Ingredientes - Receta:
+### Ingredientes - Receta - Preparacion:
+* Id
 * Id de la receta
 * Id de ingredientes
+* Id de preparacion
 
 ### Preparación:
 > Los pasos de preparación:
-* Deben estar numerados para indicar el orden correcto
-* Deben contener el texto de la instrucción. 
+* IdPreparacion: Deben estar numerados para indicar el orden correcto
+* Descripcion: Deben contener el texto de la instrucción. 
 
 ### Calificación:
 > Los usuarios pueden valorar las recetas que han probado mediante una Calificación: 
