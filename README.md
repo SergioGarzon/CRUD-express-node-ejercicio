@@ -33,7 +33,7 @@ Lo usuarios pueden subir sus propias Recetas.
 * También se pueden clasificar por tipo de Cocina (ej: 'Italiana', 'Mexicana', 'Asiática'). 
 * Cada receta se compone de una lista de Ingredientes necesarios y una secuencia de Pasos de Preparación. 
 
-### Cateogoria:
+### Categoria:
 * id
 * descripcion
 
