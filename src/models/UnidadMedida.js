@@ -1,23 +1,26 @@
 /*
-### Tipo de cocina:
+### Unidad Medida
+> Unidad de medida (ej: 'gramos', 'tazas', 'unidades')
 * id
-* descripcion (ej: 'Italiana', 'Mexicana', 'Asiática').
-* Esta asociado a la receta
+* descripcion 
+
 */
 
 import { DataTypes } from "sequelize"
 import { sequelize } from "../config/database.js"
 
-const TipoCocina = sequelize.define("TipoCocina", {
-    idTipoCocina: {
+const UnidadMedida = sequelize.define("UnidadMedida", {
+    idUnidadMedida: {
         type: DataTypes.INTEGER,
         primaryKey: true,
         autoIncrement: true
     },
     descripcion: {
-        type: DataTypes.STRING(25),
+        type: DataTypes.STRING(15),
         allowNull: false
     }
 })
 
-export default TipoCocina
+
+export default UnidadMedida
+

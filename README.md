@@ -53,11 +53,18 @@ Lo usuarios pueden subir sus propias Recetas.
 
 ### Ingredientes:  
 > Para cada ingrediente en una receta, se debe especificar:
+* id
+* descripcion
 * Cantidad (ej: '200')
 * Unidad de medida (ej: 'gramos', 'tazas', 'unidades'). 
 * Un mismo ingrediente (ej: 'Harina de trigo') puede usarse en muchas recetas. 
 
-### Ingredientes Receta:
+### Unidad Medida
+> Unidad de medida (ej: 'gramos', 'tazas', 'unidades')
+* id
+* descripcion 
+
+### Ingredientes - Receta:
 * Id de la receta
 * Id de ingredientes
 
