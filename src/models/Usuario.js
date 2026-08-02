@@ -16,16 +16,16 @@ const Usuario = sequelize.define("Usuario", {
         autoIncrement: true
     },
     nombreUsuario: { 
-        type: DataTypes.STRING,
+        type: DataTypes.STRING(20),
         allowNull: false,
         unique: true,
     },
     email: {
-        type: DataTypes.STRING,
+        type: DataTypes.STRING(30),
         allowNull: false
     },
     contrasenia: {
-        type: DataTypes.STRING,
+        type: DataTypes.STRING(20),
         allowNull: false,
     },
 })

@@ -3,8 +3,11 @@
   "version": "1.0.0",
   "description": "* Se debe realizar la estructura del backend para el siguiente caso. El mismo debe contener todos los modelos y las rutas CRUD de al menos 1 (UN) modelo.",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev": "nodemon index.js"
   },
   "keywords": [],
   "author": "",
