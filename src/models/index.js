@@ -8,6 +8,9 @@ import Receta from "./Receta.js"
 import RecetaCategoria from "./RecetaCategoria.js"
 import IngredienteRecetaPreparacion from "./IngredienteRecetaPreparacion.js"
 import Preparacion from "./Preparacion.js"
+import ComentarioCalificacionRecetaUsuario from "./ComentarioCalificacionRecetaUsuario.js"
+import ListaCompra from "./ListaCompra.js"
+import DetalleListaCompra from "./DetalleListaCompra.js"
 
 Receta.belongsTo(Usuario, { foreignKey: "idUsuario" })
 Usuario.hasMany(Receta, { foreignKey: "idUsuario" })
@@ -36,6 +39,17 @@ Receta.hasMany(IngredienteRecetaPreparacion, { foreignKey: "idReceta" })
 IngredienteRecetaPreparacion.belongsTo(Preparacion, { foreignKey: "idPreparacion" })
 Preparacion.hasMany(IngredienteRecetaPreparacion, { foreignKey: "idPreparacion" })
 
+ComentarioCalificacionRecetaUsuario.belongsTo(Usuario, { foreignKey: "idUsuario" })
+Usuario.hasMany(ComentarioCalificacionRecetaUsuario, { foreignKey: "idUsuario" })
+
+ComentarioCalificacionRecetaUsuario.belongsTo(Receta, { foreignKey: "idReceta" })
+Receta.hasMany(ComentarioCalificacionRecetaUsuario, { foreignKey: "idReceta" })
+
+ListaCompra.belongsTo(Usuario, { foreignKey: "idUsuario" })
+Usuario.hasMany(ListaCompra, { foreignKey: "idUsuario" })
+
+ListaCompra.belongsTo(DetalleListaCompra, { foreignKey: "idListaCompra" })
+DetalleListaCompra.hasMany(ListaCompra, { foreignKey: "idListaCompra" })
 
 export {
     Usuario,
@@ -47,5 +61,8 @@ export {
     Receta,
     RecetaCategoria,
     IngredienteRecetaPreparacion,
-    Preparacion
+    Preparacion,
+    ComentarioCalificacionRecetaUsuario,
+    ListaCompra,
+    DetalleListaCompra
 }

@@ -75,12 +75,11 @@ Plataforma de Recetas de Cocina "Sabor Compartido" Se desea crear un sitio web d
 * IdPreparacion: Deben estar numerados para indicar el orden correcto
 * Descripcion: Deben contener el texto de la instrucción. 
 
-### Calificación:
+### ComentarioCalificacionRecetaUsuario:
 > Los usuarios pueden valorar las recetas que han probado mediante una Calificación: 
 * Asignando un puntaje (ej: de 1 a 5 estrellas). 
 * Esta asociado al usuario que emite
 
-### Comentarios:
 > También pueden dejar Comentarios escritos en las recetas, expresando su opinión o haciendo preguntas. Tanto las calificaciones como los comentarios están asociados al usuario que los emite y a la receta correspondiente, y tienen una fecha de publicación.
 * id
 * texto correspondiente al comentario
@@ -89,5 +88,14 @@ Plataforma de Recetas de Cocina "Sabor Compartido" Se desea crear un sitio web d
 
 ### Lista de Compras
 > Además, los usuarios pueden crear Listas de Compras personalizadas. Una lista de compras tiene un nombre (ej: "Compra semanal", "Ingredientes Torta") y pertenece a un usuario. El usuario puede agregar ingredientes a su lista, especificando la cantidad y unidad que necesita comprar. Estos ingredientes pueden provenir de una o varias recetas o ser añadidos
+* idListaCompra
 * nombre
-* Pertenecen a un usuario
+* idUsuario
+* idDetalleListaCompra
+
+### Detalle Lista de Compras
+
+* idDetalleListaCompra
+* idIngrediente
+* idReceta
+* cantidad
