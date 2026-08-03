@@ -99,3 +99,10 @@ Plataforma de Recetas de Cocina "Sabor Compartido" Se desea crear un sitio web d
 * idIngrediente
 * idReceta
 * cantidad
+  
+  
+  
+  
+## Diagrama de bases de datos
+
+<img src="./recursos/model_db.png" alt="Imagen del modelo de bases de datos relacional" />

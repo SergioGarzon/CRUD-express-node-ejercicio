@@ -19,7 +19,7 @@ const ListaCompra = sequelize.define("ListaCompra", {
         autoIncrement: true
     },
     nombre: {
-        type: DataTypes.STRING,
+        type: DataTypes.STRING(15),
         allowNull: false
     },
     idUsuario: {

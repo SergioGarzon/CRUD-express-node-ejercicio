@@ -9,7 +9,7 @@
 import { DataTypes } from "sequelize"
 import { sequelize } from "../config/database.js"
 
-const IngredienteRecetaPreparacion = sequelize.define("IngredienteRecetaPreparacion", {
+const c = sequelize.define("IngredienteRecetaPreparacion", {
     id: {
         type: DataTypes.INTEGER,
         primaryKey: true,
